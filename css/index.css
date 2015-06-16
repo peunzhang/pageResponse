@@ -1,0 +1,32 @@
+/* ============================================================
+   样式重置
+   ============================================================ */
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:0 none;}
+img{display:inline-block;overflow:hidden;vertical-align:top;}
+em{font-style:normal;}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;border:0 none;}
+menu{margin:0;padding:0;}
+body{-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family:Helvetica;}
+input[type="number"]{-webkit-user-select:text;}
+a,button,input,img{-webkit-touch-callout:none;}/
+input,select,textarea{outline:none;}
+html,body{height:100%;}
+a{text-decoration:none;}
+
+/* ============================================================
+   页面内容
+  ============================================================ */
+/*框架*/
+body{overflow: hidden;}
+.page-wrap{overflow:hidden}
+.page{display:none;width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}
+.contain{width:100%;height:100%;display:none;position:relative;z-index:0}
+.current .contain,.slide .contain{display:block}
+.current{display:block;z-index:1}
+.slide{display:block;z-index:2}
+.swipe{display:block;z-index:3;transition-duration:0ms!important;-webkit-transition-duration:0ms!important}
