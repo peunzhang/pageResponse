@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>demo</title>
+<style type="text/css">
+*{padding: 0;margin: 0;}
+img{border: none;}
+html,body{height: 100%;}
+h1,p{width: 100%;color: #FFFFFF;font-size: 15px;position: absolute;top: 248px;left: 0;text-align: center;line-height: 1;}
+p{font-size: 9px;top: 282px;}
+
+.page{
+    position: relative;
+    width: 320px;
+    height: 504px;
+    overflow: hidden;
+    background-color: black;
+}
+</style>
+</head>
+<body>
+<div class="page">
+	<img src="demo.jpg" alt="" width="100%">
+    <h1>你一定也有过一个翱翔天际的梦</h1>
+    <p>-  回家，或踏上旅途，飞机是自由的符号  -</p>
+</div>
+
+
+<script type="text/javascript" src="js/pageResponse.js"></script>
+<script type="text/javascript">
+/*
+ * 说明 ：页面的宽度和高度必须固定
+ * 模式一：auto
+ * 1.保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在移动设备中
+ * 模式二：contain
+ * 1.保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在移动设备中
+ * 2.页面水平垂直居中，左右或上下可能出现空白
+ * 3.适合滑屏页面、单屏页面
+ * 模式三：cover
+ * 1.保持页面的宽高比，调整页面的宽度或高度（较小者），使页面完全包含在移动设备中
+ * 2.页面水平垂直居中，超出屏幕左右或上下的内容会被隐藏
+ * 3.适合滑屏页面、单屏页面
+ */
+window.onload = window.onresize = function(){
+    var page = new pageResponse({
+        class : 'page',     //模块的类名
+        mode : 'contain',     // auto || contain || cover 
+        width : '320',      //默认宽320px 
+        height : '504'      //默认高504px
+    })
+}
+</script>
+</body>
+</html>
