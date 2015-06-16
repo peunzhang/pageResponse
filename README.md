@@ -3,7 +3,7 @@
 <p>兼容：ios4+、android2.3+、winphone8+</p>
 <p>大小：1.24K</p>
 <h2>使用方法</h2>
-<p>输入页面的宽度和高度，具体参考一下配置</p>
+<p>输入页面的宽度和高度，具体参考如下配置</p>
 <pre>
 window.onload = window.onresize = function(){
     var page = new pageResponse({
