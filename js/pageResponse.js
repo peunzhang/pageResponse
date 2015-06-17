@@ -34,6 +34,10 @@ function pageResponse(opt) {
             s.transformOrigin = "left top 0";
             s.webkitTransform = "scale(" + num + ")";
             s.transform = "scale(" + num + ")";
+        if(mode == "auto"){
+            document.body.style.height = ph * num + "px";// 兼容android2.3.5系统下body高度不自动刷新的bug
+        }
+        else 
         if(mode == "contain" || mode == "cover"){
             s.position = "absolute";
             s.left = "50%";
