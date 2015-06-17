@@ -11,12 +11,7 @@
 <link rel="stylesheet" href="css/index.css">
 </head>
 
-<!--[if lte IE 7]>      
-<body scroll="no"> 
-<![endif]-->
-<!--[if gt IE 7]><!--> 
 <body> 
-<!--<![endif]-->
 
 <!-- 框架[[ -->
 <div id="pageContain" class="page-wrap">
@@ -89,24 +84,12 @@ runPage = new FullPage({
 
 <script type="text/javascript" src="http://ol.weixin.qq.com/protect/doc/guide/js/pageResponse/pageResponse.min.js"></script>
 <script type="text/javascript">
-/*
- * 模式一：auto
- * 1.保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在移动设备中
- * 模式二：contain
- * 1.保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在移动设备中
- * 2.页面水平垂直居中，左右或上下可能出现空白
- * 3.适合滑屏页面、单屏页面
- * 模式三：cover
- * 1.保持页面的宽高比，调整页面的宽度或高度（较小者），使页面完全包含在移动设备中
- * 2.页面水平垂直居中，超出屏幕左右或上下的内容会被隐藏
- * 3.适合滑屏页面、单屏页面
- */
 window.onload = window.onresize = function(){
     var page = new pageResponse({
-        class : 'contain', //模块的类名
-        mode : 'contain',    // auto || contain || cover 
-        width : '320',     //默认宽320px 
-        height : '504'     //默认高504px
+        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
+        mode : 'auto',     // auto || contain || cover 
+        width : '320',      //输入页面的宽度，默认宽320px 
+        height : '504'      //输入页面的高度，默认高504px
     })
 }
 </script>
