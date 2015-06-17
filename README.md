@@ -10,7 +10,7 @@
 <h2>示例二：contian模式</h2>
 <ol>
 <li>保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在浏览器窗口中</li>
-<li>页面水平垂直居中，左右或上下可能出现空白，简单设置下择背景色填充即可</li>
+<li>页面水平垂直居中，左右或上下可能出现空白，页面背景使用纯色或可复制背景可解决此类问题</li>
 <li>适合滑屏页面、单屏页面</li>
 </ol>
 <a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_contain.html" target="_blank">预览</a>
