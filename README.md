@@ -14,7 +14,7 @@
 <li>页面水平垂直居中，左右或上下可能出现空白，页面背景使用纯色或可复制背景可解决此类问题</li>
 <li>适合滑屏页面、单屏页面</li>
 </ol>
-<a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_contain.html" target="_blank">预览</a>
+<a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_contain.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_contain.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_contain.gif" width="400" height="582"></p>
 <h2>示例三：cover模式</h2>
@@ -23,11 +23,11 @@
 <li>页面水平垂直居中，超出浏览器窗口左右或上下的内容会被隐藏</li>
 <li>适合滑屏页面、单屏页面，且页面边缘无重要内容</li>
 </ol>
-<a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_cover.html" target="_blank">预览</a>
+<a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_cover.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_cover.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_cover.gif" width="400" height="582"></p>
 <h2>结合fullPage滑屏框架</h2>
-<a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_fullPage.html" target="_blank">预览</a>
+<a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_fullPage.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.gif" width="400" height="582"></p>
 <h2>快速上手</h2>
