@@ -3,13 +3,13 @@
 <p>兼容：ios4+、android2.3+、winphone8+</p>
 <p>大小：1.24K</p>
 <h2>模式一：auto</h2>
-<p>保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在移动设备中</p>
+<p>保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在浏览器窗口中</p>
 <a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_auto.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_auto.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_auto.gif" width="400" height="582"></p>
 <h2>模式二：contian</h2>
 <ol>
-<li>保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在移动设备中</li>
+<li>保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在浏览器窗口中</li>
 <li>页面水平垂直居中，左右或上下可能出现空白，简单设置下择背景色填充即可</li>
 <li>适合滑屏页面、单屏页面</li>
 </ol>
@@ -18,8 +18,8 @@
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_contain.gif" width="400" height="582"></p>
 <h2>模式三：cover</h2>
 <ol>
-<li>保持页面的宽高比，调整页面的宽度或高度（较小者），使页面完全包含在移动设备中</li>
-<li>页面水平垂直居中，超出屏幕左右或上下的内容会被隐藏</li>
+<li>保持页面的宽高比，调整页面的宽度或高度（较小者），使页面完全覆盖浏览器窗口</li>
+<li>页面水平垂直居中，超出浏览器窗口左右或上下的内容会被隐藏</li>
 <li>适合滑屏页面、单屏页面，且页面边缘无重要内容</li>
 </ol>
 <a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_cover.html" target="_blank">预览</a>
