@@ -30,6 +30,56 @@
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.gif" width="400" height="582"></p>
 <h2>快速上手</h2>
+<p>代码示例：</p>
+<pre>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>demo</title>
+<style type="text/css">
+*{padding: 0;margin: 0;}
+img{border: none;}
+html,body{height: 100%;}
+h1,p{width: 100%;color: #FFFFFF;font-size: 15px;position: absolute;top: 248px;left: 0;text-align: center;line-height: 1;}
+p{font-size: 9px;top: 282px;}
+
+.page{
+    position: relative;
+    width: 320px;
+    height: 504px;
+    overflow: hidden;
+    background-color: black;
+}
+</style>
+</head>
+<body>
+<div class="page">
+	<img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/demo.jpg" alt="" width="320" height="504">
+    <h1>你一定也有过一个翱翔天际的梦</h1>
+    <p>-  回家，或踏上旅途，飞机是自由的符号  -</p>
+</div>
+
+
+<script type="text/javascript" src="http://1.peunzhang.sinaapp.com/js/pageResponse.min.js"></script>
+<script type="text/javascript">
+window.onload = window.onresize = function(){
+    var page = new pageResponse({
+        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
+        mode : 'contain',     // auto || contain || cover 
+        width : '320',      //输入页面的宽度，默认宽320px 
+        height : '504'      //输入页面的高度，默认高504px
+    })
+}
+</script>
+</body>
+</html>
+</pre>
 <p>如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px</p>
 <pre>
 window.onload = window.onresize = function(){
