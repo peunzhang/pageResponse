@@ -33,8 +33,8 @@
 <p>meta的viewport的设置：</p>
 <pre>&lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt;</pre>
 <p>启用框架代码：</p>
-<p>如果视觉稿尺寸是640px*1008px<br>如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px</p>
 <pre>
+//如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px
 window.onload = window.onresize = function(){
     var page = new pageResponse({
         class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
@@ -45,8 +45,8 @@ window.onload = window.onresize = function(){
 }
 </pre>
 <p>启用框架代码：</p>
-<p>如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px</p>
 <pre>
+//如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px
 window.onload = window.onresize = function(){
     var page = new pageResponse({
         class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
