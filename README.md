@@ -2,29 +2,6 @@
 <p>说明：无需rem、无需媒体查询、无需百分比布局，一个简单的框架让h5页面自动适配各种移动设备</p>
 <p>兼容：ios4+、android2.3+、winphone8+</p>
 <p>大小：1.24K</p>
-<h2>快速上手</h2>
-<p>如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px</p>
-<pre>
-window.onload = window.onresize = function(){
-    var page = new pageResponse({
-        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
-        mode : 'contain',     // auto || contain || cover 
-        width : '320',      //输入页面的宽度，默认宽320px 
-        height : '504'      //输入页面的高度，默认高504px
-    })
-}
-</pre>
-<p>如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px</p>
-<pre>
-window.onload = window.onresize = function(){
-    var page = new pageResponse({
-        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
-        mode : 'contain',     // auto || contain || cover 
-        width : '640',      //输入页面的宽度，默认宽320px 
-        height : '1008'      //输入页面的高度，默认高504px
-    })
-}
-</pre>
 <h2>示例一：auto模式</h2>
 <p>保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在浏览器窗口中</p>
 <a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_auto.html" target="_blank">预览</a>
@@ -52,3 +29,26 @@ window.onload = window.onresize = function(){
 <a href="http://1.peunzhang.sinaapp.com/demo/pageResponse/pageResponse_fullPage.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.gif" width="400" height="582"></p>
+<h2>快速上手</h2>
+<p>如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px</p>
+<pre>
+window.onload = window.onresize = function(){
+    var page = new pageResponse({
+        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
+        mode : 'contain',     // auto || contain || cover 
+        width : '320',      //输入页面的宽度，默认宽320px 
+        height : '504'      //输入页面的高度，默认高504px
+    })
+}
+</pre>
+<p>如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px</p>
+<pre>
+window.onload = window.onresize = function(){
+    var page = new pageResponse({
+        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
+        mode : 'contain',     // auto || contain || cover 
+        width : '640',      //输入页面的宽度，默认宽320px 
+        height : '1008'      //输入页面的高度，默认高504px
+    })
+}
+</pre>
