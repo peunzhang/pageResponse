@@ -1,8 +1,8 @@
 <h1>移动端响应式框架</h1>
 <p>一个零依赖的框架让h5页面适配各种移动设备</p>
-<p>说明：无需rem、无需媒体查询、无需百分比布局，跟PC一样使用px定义好页面的各个元素即可</p>
+<p>说明：无需rem、无需媒体查询、无需百分比布局，使用px为单位定义页面的各个元素即可</p>
 <p>兼容：ios4+、android2.3+、winphone8+</p>
-<p>大小：1.24K</p>
+<p>大小：1.3k</p>
 <h2>示例一：auto模式</h2>
 <p>保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在浏览器窗口中</p>
 <a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_auto.html" target="_blank">预览</a>
