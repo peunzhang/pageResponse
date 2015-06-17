@@ -17,19 +17,19 @@
 <div id="pageContain" class="page-wrap">
 	
 	<div class="page page1 current">
-		<div class="contain">
+		<div class="content">
 			<img src="img/demo0.png" alt="" widhth="320" height="504">
 		</div>
 	</div>
 
 	<div class="page page2">
-		<div class="contain">
+		<div class="content">
 			<img src="img/demo1.png" alt="" widhth="320" height="504">
 		</div>
 	</div>
 
 	<div class="page page3">
-		<div class="contain">
+		<div class="content">
 			<img src="img/demo2.png" alt="" widhth="320" height="504">
 		</div>
 	</div>
@@ -58,7 +58,7 @@ runPage = new FullPage({
 
 	id : 'pageContain',                            // id of contain
 	slideTime : 800,                               // time of slide
-	// continuous : true,                             // create an infinite feel with no endpoints
+	continuous : true,                             // create an infinite feel with no endpoints
     effect : {                                     // slide effect
         transform : {
         	translate : 'Y',					   // 'X'|'Y'|'XY'|'none'
@@ -82,17 +82,18 @@ runPage = new FullPage({
 
 </script>
 
-<script type="text/javascript" src="http://ol.weixin.qq.com/protect/doc/guide/js/pageResponse/pageResponse.min.js"></script>
+<script type="text/javascript" src="js/pageResponse.min.js"></script>
 <script type="text/javascript">
 window.onload = window.onresize = function(){
     var page = new pageResponse({
-        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
-        mode : 'auto',     // auto || contain || cover 
+        class : 'content',     //模块的类名，使用class来控制页面上的模块(1个或多个)
+        mode : 'contain',     // auto || contain || cover 
         width : '320',      //输入页面的宽度，默认宽320px 
         height : '504'      //输入页面的高度，默认高504px
     })
 }
 </script>
+
 </html>
  
 
