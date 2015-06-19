@@ -3,6 +3,8 @@
 <p>告别rem、媒体查询、百分比等相对复杂且定位不精准的布局</p>
 <p>兼容性良好，支持ios4+、android2.3+、winphone8+系统</p>
 <p>框架大小1.3k，零依赖</p>
+<p>超级收银员案例</p>
+<p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.png" width="200" height="200"></p>
 <h2>示例一：auto模式</h2>
 <p>保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在浏览器窗口中</p>
 <a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_auto.html" target="_blank">预览</a>
