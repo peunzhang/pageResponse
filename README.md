@@ -1,9 +1,9 @@
-<h1>移动端响应式框架</h1>
+<h1>移动端响应式插件</h1>
 <p>使用transfrom:scale缩放页面，要求视觉稿高清</p>
 <p>页面以px为单位即可让h5适配各种移动设备，适配原则根据视觉稿比例缩放页面</p>
 <p>告别rem、媒体查询、百分比等相对复杂且定位不精准的布局</p>
 <p>兼容性良好，支持ios4+、android2.3+、winphone8+系统</p>
-<p>框架大小1.22k，零依赖</p>
+<p>大小1.22k，零依赖</p>
 <p>三种适配模式可选 auto || contain || cover </p>
 <p>真实案例：超级收银员</p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.png" width="200" height="200"></p>
@@ -38,7 +38,7 @@
 <h2>快速上手</h2>
 <p>meta的viewport设置：</p>
 <pre>&lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt;</pre>
-<p>启用框架代码示例一：</p>
+<p>启用插件代码示例一：</p>
 <pre>
 &lt;div class=&quot;page&quot;&gt;
 &lt;img src=&quot;img/demo1.jpg&quot; alt=&quot;&quot; width=&quot;320&quot; height=&quot;504&quot;&gt;
@@ -57,7 +57,7 @@ window.onload = window.onresize = function(){
     })
 }
 </pre>
-<p>启用框架代码示例二：</p>
+<p>启用插件代码示例二：</p>
 <pre>
 &lt;!-- 2个模块（包含隐藏的）都包含class:page，pageResponse可对这2个模块起作用 --&gt;<br>
 &lt;div class=&quot;page&quot;&gt;
