@@ -2,7 +2,7 @@
 <p>使用px为单位即可让h5页面适配各种移动设备，适配原则根据视觉稿比例缩放页面</p>
 <p>告别rem、媒体查询、百分比等相对复杂且定位不精准的布局</p>
 <p>兼容性良好，支持ios4+、android2.3+、winphone8+系统</p>
-<p>框架大小1.3k，零依赖</p>
+<p>框架大小1.22k，零依赖</p>
 <p>真实案例：超级收银员</p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.jpg" width="600" height="632"></p>
