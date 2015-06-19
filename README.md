@@ -40,10 +40,10 @@
 <pre>&lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt;</pre>
 <p>启用框架代码示例一：</p>
 <pre>
-&lt;div class=&quot;page&quot;&gt;<br>
-&lt;img src=&quot;img/demo1.jpg&quot; alt=&quot;&quot; width=&quot;320&quot; height=&quot;504&quot;&gt;<br>
-&lt;h1&gt;你一定也有过一个翱翔天际的梦1&lt;/h1&gt;<br>
-&lt;p&gt;-  回家，或踏上旅途，飞机是自由的符号  -&lt;/p&gt;<br>
+&lt;div class=&quot;page&quot;&gt;
+&lt;img src=&quot;img/demo1.jpg&quot; alt=&quot;&quot; width=&quot;320&quot; height=&quot;504&quot;&gt;
+&lt;h1&gt;你一定也有过一个翱翔天际的梦1&lt;/h1&gt;
+&lt;p&gt;-  回家，或踏上旅途，飞机是自由的符号  -&lt;/p&gt;
 &lt;/div&gt;
 </pre>
 <pre>
@@ -59,16 +59,16 @@ window.onload = window.onresize = function(){
 </pre>
 <p>启用框架代码示例二：</p>
 <pre>
-<p>&lt;!-- 2个模块（包含隐藏的）都包含class:page，pageResponse可对这2个模块起作用 --&gt;<br>
-  &lt;div class=&quot;page&quot;&gt;
-  &lt;img src=&quot;img/demo1.jpg&quot; alt=&quot;&quot; width=&quot;640&quot; height=&quot;1008&quot;&gt;
-  &lt;h1&gt;你一定也有过一个翱翔天际的梦1&lt;/h1&gt;
-  &lt;p&gt;-  回家，或踏上旅途，飞机是自由的符号  -&lt;/p&gt;
-&lt;/div&gt;</p>
-<p>&lt;div class=&quot;page hide&quot;&gt;
-  &lt;p&gt;是否还记得她&lt;/p&gt;
-  &lt;img src=&quot;img/logo.jpg&quot; alt=&quot;&quot; width=&quot;40&quot; height=&quot;40&quot;&gt;
-&lt;/div&gt;</p>
+&lt;!-- 2个模块（包含隐藏的）都包含class:page，pageResponse可对这2个模块起作用 --&gt;<br>
+&lt;div class=&quot;page&quot;&gt;
+&lt;img src=&quot;img/demo1.jpg&quot; alt=&quot;&quot; width=&quot;640&quot; height=&quot;1008&quot;&gt;
+&lt;h1&gt;你一定也有过一个翱翔天际的梦1&lt;/h1&gt;
+&lt;p&gt;-  回家，或踏上旅途，飞机是自由的符号  -&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;page hide&quot;&gt;
+&lt;p&gt;是否还记得她&lt;/p&gt;
+&lt;img src=&quot;img/logo.jpg&quot; alt=&quot;&quot; width=&quot;40&quot; height=&quot;40&quot;&gt;
+&lt;/div&gt;
 </pre>
 <pre>
 //如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px
