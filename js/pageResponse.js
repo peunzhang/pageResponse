@@ -46,7 +46,7 @@ function pageResponse(opt) {
             s.webkitTransformOrigin = "center center 0";
             s.transformOrigin = "center center 0";
             document.body.style.msTouchAction = "none";// 阻止默认滑屏事件
-            document.ontouchstart = function(e){e.preventDefault()}
+            document.ontouchmove = function(e){e.preventDefault()}
         }
     }
     var dw = document.documentElement.clientWidth,
