@@ -68,9 +68,7 @@ window.onload = window.onresize = function(){
 <p>&lt;div class=&quot;page hide&quot;&gt;<br>
   &lt;p&gt;是否还记得她&lt;/p&gt;<br>
   &lt;img src=&quot;img/logo.jpg&quot; alt=&quot;&quot; width=&quot;40&quot; height=&quot;40&quot;&gt;<br>
-  <br>
   &lt;/div&gt;</p>
-
 </pre>
 <pre>
 //如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px
