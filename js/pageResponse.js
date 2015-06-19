@@ -37,8 +37,7 @@ function pageResponse(opt) {
         if(mode == "auto"){
             document.body.style.height = ph * num + "px";// 兼容android2.3.5系统下body高度不自动刷新的bug
         }
-        else 
-        if(mode == "contain" || mode == "cover"){
+        else if(mode == "contain" || mode == "cover"){
             s.position = "absolute";
             s.left = "50%";
             s.top = "50%";
@@ -57,23 +56,11 @@ function pageResponse(opt) {
         ph = opt.height || 504,
         ps = pw / ph,// 页面宽高初始比例
         pd = getElementsByClassName(opt.class),
-        sm = opt.mode || 'auto',
+        sm = opt.mode || "auto",
         sn;
     for(i = 0;i < pd.length;i++){
-        switch(sm){
-            case "auto":
-            sn = dw / pw;
-            template(sm, pd[i], sn);
-            break; 
-            case "contain":
-            sn = ds > ps ? dh / ph : dw / pw;// 页面缩放比例
-            template(sm, pd[i], sn);
-            break; 
-            case "cover":
-            sn = ds < ps ? dh / ph : dw / pw;
-            template(sm, pd[i], sn);
-            break;   
-        }
+        sn = (sm == "contain") ? (ds > ps ? dh / ph : dw / pw) : (sm == "cover") ? (ds < ps ? dh / ph : dw / pw) : dw / pw;// 页面缩放比例，默认模式为auto
+        template(sm, pd[i], sn);
     }
 }
 /*  使用方法
