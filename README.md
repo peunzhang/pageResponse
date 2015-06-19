@@ -5,12 +5,12 @@
 <p>框架大小1.3k，零依赖</p>
 <p>真实案例：超级收银员</p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.png" width="200" height="200"></p>
-<p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.jpg" width="200" height="200"></p>
+<p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.jpg" width="600" height="632"></p>
 <h2>示例一：auto模式</h2>
 <p>保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在浏览器窗口中</p>
 <a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_auto.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_auto.png" width="200" height="200"></p>
-<p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_auto.gif" width="600" height="632"></p>
+<p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_auto.gif" width="400" height="582"></p>
 <h2>示例二：contian模式</h2>
 <ol>
 <li>保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在浏览器窗口中</li>
