@@ -3,15 +3,16 @@
 <p>告别rem、媒体查询、百分比等相对复杂且定位不精准的布局</p>
 <p>兼容性良好，支持ios4+、android2.3+、winphone8+系统</p>
 <p>框架大小1.22k，零依赖</p>
+<p>三种适配模式可选 auto || contain || cover </p>
 <p>真实案例：超级收银员</p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.jpg" width="600" height="632"></p>
-<h2>示例一：auto模式</h2>
+<h2>auto模式</h2>
 <p>保持页面的宽高比，调整页面的宽度，使页面宽度完全包含在浏览器窗口中</p>
 <a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_auto.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_auto.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_auto.gif" width="400" height="582"></p>
-<h2>示例二：contian模式</h2>
+<h2>contian模式</h2>
 <ol>
 <li>保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在浏览器窗口中</li>
 <li>页面水平垂直居中，左右或上下可能出现空白，页面背景使用纯色或可复制背景可解决此类问题</li>
@@ -20,7 +21,7 @@
 <a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_contain.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_contain.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_contain.gif" width="400" height="582"></p>
-<h2>示例三：cover模式</h2>
+<h2>cover模式</h2>
 <ol>
 <li>保持页面的宽高比，调整页面的宽度或高度（较小者），使页面完全覆盖浏览器窗口</li>
 <li>页面水平垂直居中，超出浏览器窗口左右或上下的内容会被隐藏</li>
@@ -29,7 +30,7 @@
 <a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_cover.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_cover.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_cover.gif" width="400" height="582"></p>
-<h2>结合fullPage滑屏框架</h2>
+<h2>结合fullPage滑屏框架的例子</h2>
 <a href="http://peunzhang.sinaapp.com/demo/pageResponse/pageResponse_fullPage.html" target="_blank">预览</a>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/pageResponse_fullPage.gif" width="400" height="582"></p>
