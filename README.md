@@ -1,5 +1,5 @@
 <h1>移动端响应式插件</h1>
-<p>使用transfrom:scale缩放页面，要求视觉稿高清</p>
+<p>使用transform:scale缩放页面，要求视觉稿高清</p>
 <p>页面以px为单位即可让h5适配各种移动设备，适配原则根据视觉稿比例缩放页面</p>
 <p>告别rem、媒体查询、百分比等相对复杂且定位不精准的布局</p>
 <p>兼容性良好，支持ios4+、android2.3+、winphone8+系统</p>
@@ -8,7 +8,7 @@
 <p>真实案例：超级收银员</p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.png" width="200" height="200"></p>
 <p><img src="https://raw.githubusercontent.com/peunzhang/pageResponse/master/pic/eg1.jpg" width="600" height="632"></p>
-<h2>contian模式（推荐）</h2>
+<h2>contain模式（推荐）</h2>
 <ol>
 <li>保持页面的宽高比，调整页面的宽度或高度（较大者），使页面完全包含在浏览器窗口中</li>
 <li>页面水平垂直居中，左右或上下可能出现空白，页面背景使用纯色或可复制背景可解决此类问题</li>
