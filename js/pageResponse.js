@@ -2,7 +2,7 @@
  * 名称 ：移动端响应式框架
  * 作者 ：白树 http://peunzhang.cnblogs.com
  * 版本 ：v1.0
- * 日期 ：2015.6.19
+ * 日期 ：2015.6.23
  * 兼容 ：ios4+、android2.3+、winphone8+
  */
 function pageResponse(opt) {
@@ -57,9 +57,8 @@ function pageResponse(opt) {
         ps = pw / ph,// 页面宽高初始比例
         pd = getElementsByClassName(opt.class),
         sm = opt.mode || "auto",
-        sn;
-    for(i = 0;i < pd.length;i++){
         sn = (sm == "contain") ? (ds > ps ? dh / ph : dw / pw) : (sm == "cover") ? (ds < ps ? dh / ph : dw / pw) : dw / pw;// 页面缩放比例，默认模式为auto
+    for(i = 0;i < pd.length;i++){
         template(sm, pd[i], sn);
     }
 }
