@@ -49,9 +49,9 @@
 <pre>
 //如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px
 window.onload = window.onresize = function(){
-    var page = new pageResponse({
-        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
-        mode : 'contain',     // auto || contain || cover 
+    pageResponse({
+        selectors : '.page',     //模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover ，默认模式为auto 
         width : '320',      //输入页面的宽度，只支持输入数值，默认宽度为320px
         height : '504'      //输入页面的高度，只支持输入数值，默认高度为504px
     })
@@ -73,9 +73,9 @@ window.onload = window.onresize = function(){
 <pre>
 //如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px
 window.onload = window.onresize = function(){
-    var page = new pageResponse({
-        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
-        mode : 'contain',     // auto || contain || cover 
+    pageResponse({
+        selectors : '.page',     //模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover ，默认模式为auto 
         width : '640',      //输入页面的宽度，只支持输入数值，默认宽度为320px
         height : '1008'      //输入页面的高度，只支持输入数值，默认高度为504px
     })
