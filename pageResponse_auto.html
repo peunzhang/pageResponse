@@ -15,7 +15,7 @@ html,body{height: 100%;}
 h1,p{width: 100%;color: #FFFFFF;font-size: 15px;position: absolute;top: 248px;left: 0;text-align: center;line-height: 1;}
 p{font-size: 9px;top: 282px;}
 
-.page{
+#page{
     position: relative;
     width: 320px;
     height: 504px;
@@ -25,7 +25,7 @@ p{font-size: 9px;top: 282px;}
 </style>
 </head>
 <body>
-<div class="page">
+<div id="page">
 	<img src="img/demo.jpg" alt="" width="320" height="504">
     <h1>你一定也有过一个翱翔天际的梦</h1>
     <p>-  回家，或踏上旅途，飞机是自由的符号  -</p>
@@ -35,8 +35,8 @@ p{font-size: 9px;top: 282px;}
 <script type="text/javascript" src="js/pageResponse.min.js"></script>
 <script type="text/javascript">
 window.onload = window.onresize = function(){
-    var page = new pageResponse({
-        class : 'page',     //模块的类名，使用class来控制页面上的模块(1个或多个)
+    pageResponse({
+        selectors : '#page',     //模块选择器，使用querySelectorAll的方法
         mode : 'auto',     // auto || contain || cover ，默认模式为auto 
         width : '320',      //输入页面的宽度，只支持输入数值，默认宽度为320px
         height : '504'      //输入页面的高度，只支持输入数值，默认高度为504px
