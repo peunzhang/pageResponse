@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>demo</title>
+<style type="text/css">
+*{padding: 0;margin: 0;}
+img{border: none;}
+html,body{height: 100%;}
+h1,p{width: 100%;color: #FFFFFF;font-size: 15px;position: absolute;top: 248px;left: 0;text-align: center;line-height: 1;}
+p{font-size: 9px;top: 282px;}
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.flex-pack-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
+.menu{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    background-color: black
+}
+.menu .a{
+    width: 25%;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="menu flex flex-pack-justify" id="menu">
+    <div class="a">菜单一</div>
+    <div class="a">菜单二</div>
+    <div class="a">菜单三</div>
+	<div class="a">菜单四</div>
+</div>
+
+
+<script type="text/javascript" src="js/pageResponse.min.js"></script>
+<script type="text/javascript">
+window.onload = window.onresize = function(){
+    pageResponse({
+        selectors : '#menu',     //模块选择器，使用querySelectorAll的方法
+        mode : 'auto',     // auto || contain || cover ，默认模式为auto 
+        width : '320',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+        height : '50',     //输入页面的高度，只支持输入数值，默认高度为504px
+        origin : 'left bottom 0'     //缩放中心点，可选，在contain和cover模式下无效，默认为"left top 0"
+    })
+}
+</script>
+</body>
+</html>

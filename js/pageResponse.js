@@ -26,6 +26,7 @@ function pageResponse(opt) {
 
         // 核心代码：页面缩放比例
         sm = opt.mode || "auto",
+        or = opt.origin || "left top 0",
         sn = (sm == "contain") ? (ds > ps ? dh / ph : dw / pw) : (sm == "cover") ? (ds < ps ? dh / ph : dw / pw) : dw / pw; 
 
     //样式模板 auto || contain || cover
@@ -33,8 +34,8 @@ function pageResponse(opt) {
         var _o = obj.style;
         _o.width = pw + "px";
         _o.height = ph + "px";
-        _o.webkitTransformOrigin = "left top 0";
-        _o.transformOrigin = "left top 0";
+        _o.webkitTransformOrigin = or;
+        _o.transformOrigin = or;
         _o.webkitTransform = "scale(" + num + ")";
         _o.transform = "scale(" + num + ")";
         // 兼容android 2.3.5系统下body高度不自动刷新的bug
@@ -69,7 +70,8 @@ function pageResponse(opt) {
  *          selector : '输入类名', //模块的类名
  *          mode : 'contain',    // auto || contain || cover 
  *          width : '320',     //默认宽320px 
- *          height : '504'     //默认高504px
+ *          height : '504',     //默认高504px
+ *          origin : 'center center 0'     //缩放中心点，可选，在contain和cover模式下无效，默认为"left top 0"
  *      })
  *   }
  */
