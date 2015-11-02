@@ -67,7 +67,7 @@ function pageResponse(opt) {
 /*  使用方法
  *  window.onload = window.onresize = function(){
  *      pageResponse({
- *          selector : '输入类名', //模块的类名
+ *          selectors : '输入类名', //模块的类名
  *          mode : 'contain',    // auto || contain || cover 
  *          width : '320',     //默认宽320px 
  *          height : '504',     //默认高504px
