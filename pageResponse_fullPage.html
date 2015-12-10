@@ -8,7 +8,36 @@
 <meta content="telephone=no" name="format-detection">
 <meta content="email=no" name="format-detection">
 <title>fullPage</title>
-<link rel="stylesheet" href="css/index.css">
+<style type="text/css">
+/* ============================================================
+   样式重置
+   ============================================================ */
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:0 none;}
+img{display:inline-block;overflow:hidden;vertical-align:top;}
+em{font-style:normal;}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;border:0 none;}
+textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+menu{margin:0;padding:0;}
+body{-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family:Helvetica;}
+input[type="number"]{-webkit-user-select:text;}
+a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+input,select,textarea{outline:none;}
+/*框架*/
+html{-ms-touch-action: none;}/* 阻止windows Phone 的默认触摸事件 */
+body{overflow: hidden;}
+.page-wrap{overflow:hidden}
+.page{display:none;width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}
+.content{width:100%;height:100%;display:none;position:relative;z-index:0}
+.current .content,.slide .content{display:block}
+.current{display:block;z-index:1}
+.slide{display:block;z-index:2}
+.swipe{display:block;z-index:3;transition-duration:0ms!important;-webkit-transition-duration:0ms!important} 
+</style>
 </head>
 
 <body> 
@@ -18,19 +47,19 @@
 	
 	<div class="page current">
 		<div class="content1">
-			<img src="img/demo0.png" alt="" widhth="320" height="504">
+			<img src="demo0.jpg" alt="" width="640" height="1136">
 		</div>
 	</div>
 
 	<div class="page">
 		<div class="content2">
-			<img src="img/demo1.png" alt="" widhth="320" height="504">
+			<img src="demo1.jpg" alt="" width="640" height="1136">
 		</div>
 	</div>
 
 	<div class="page">
 		<div class="content3">
-			<img src="img/demo2.png" alt="" widhth="320" height="504">
+			<img src="demo2.jpg" alt="" width="640" height="1136">
 		</div>
 	</div>
 </div>
@@ -38,7 +67,7 @@
 
 </body>
 
-<script type="text/javascript" src="http://1.peunzhang.sinaapp.com/js/fullPage.min.js"></script>
+<script type="text/javascript" src="http://1.peunzhang.sinaapp.com/js/fullPage.min.js?v=20150923"></script>
 <script type="text/javascript">
 //框架
 var runPage = new FullPage({
@@ -61,19 +90,19 @@ var runPage = new FullPage({
 
 </script>
 
-<script type="text/javascript" src="js/pageResponse.min.js"></script>
+<script type="text/javascript" src="http://1.peunzhang.sinaapp.com/js/pageResponse.min.js?v=20150619"></script>
 <script type="text/javascript">
 window.onload = window.onresize = function(){
     pageResponse({
         selectors : '.content1,.content2,.content3',     //模块选择器，使用querySelectorAll的方法
         mode : 'contain',     // auto || contain || cover ，默认模式为auto 
-        width : '320',      //输入页面的宽度，只支持输入数值，默认宽度为320px
-        height : '504'      //输入页面的高度，只支持输入数值，默认高度为504px
+        width : '640',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+        height : '1136'      //输入页面的高度，只支持输入数值，默认高度为504px
     })
 }
 </script>
-
 </html>
  
 
 
+ 
