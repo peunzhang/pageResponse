@@ -62,6 +62,7 @@ function pageResponse(opt) {
     //运行
     while (--i >= 0) {
         template(sm, pd[i], sn);
+        pd[i].style.visibility = 'visible';
     }
 }
 /*  使用方法
@@ -74,4 +75,10 @@ function pageResponse(opt) {
  *          origin : 'center center 0'     //缩放中心点，可选，在contain和cover模式下无效，默认为"left top 0"
  *      })
  *   }
+ *
+ */
+
+/* 对于闪屏
+ * 页面在加载中，可能会存在闪屏的情况
+ * 可以给类统一加 visibility:hidden
  */
