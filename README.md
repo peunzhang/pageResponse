@@ -48,7 +48,15 @@
 </pre>
 <pre>
 //如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿尺寸除以2来计算，那么输入页面的宽度为320px和高度为504px
-window.onload = window.onresize = function(){
+window.onresize = function(){
+    pageResponse({
+        selectors : '.page',     //模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover 
+        width : '320',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+        height : '504'      //输入页面的高度，只支持输入数值，默认高度为504px
+    })
+}
+document.addEventListener("DOMContentLoaded", function() {
     pageResponse({
         selectors : '.page',     //模块选择器，使用querySelectorAll的方法
         mode : 'contain',     // auto || contain || cover 
@@ -72,7 +80,15 @@ window.onload = window.onresize = function(){
 </pre>
 <pre>
 //如果视觉稿尺寸是640px*1008px，页面样式是以视觉稿原始尺寸来计算，那么输入页面的宽度为640px和高度为1008px
-window.onload = window.onresize = function(){
+window.onresize = function(){
+    pageResponse({
+        selectors : '.page',     //模块选择器，使用querySelectorAll的方法
+        mode : 'contain',     // auto || contain || cover 
+        width : '640',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+        height : '1008'      //输入页面的高度，只支持输入数值，默认高度为504px
+    })
+}
+document.addEventListener("DOMContentLoaded", function() {
     pageResponse({
         selectors : '.page',     //模块选择器，使用querySelectorAll的方法
         mode : 'contain',     // auto || contain || cover 
