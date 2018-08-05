@@ -64,6 +64,7 @@ function pageResponse(opt) {
         template(sm, pd[i], sn);
     }
 }
+module.exports = pageResponse;
 /*  使用方法
  *  window.onresize = function(){
  *      pageResponse({
@@ -84,4 +85,3 @@ function pageResponse(opt) {
  *      })
  *   }
  */
-modules.exports = pageResponse;
