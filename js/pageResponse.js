@@ -65,7 +65,7 @@ function pageResponse(opt) {
     }
 }
 /*  使用方法
- *  window.onload = window.onresize = function(){
+ *  window.onresize = function(){
  *      pageResponse({
  *          selectors : '输入类名', //模块的类名
  *          mode : 'contain',    // auto || contain || cover 
@@ -74,4 +74,14 @@ function pageResponse(opt) {
  *          origin : 'center center 0'     //缩放中心点，可选，在contain和cover模式下无效，默认为"left top 0"
  *      })
  *   }
+ *   document.addEventListener("DOMContentLoaded", function() {
+ *      pageResponse({
+ *          selectors : '输入类名', //模块的类名
+ *          mode : 'contain',    // auto || contain || cover
+ *          width : '320',     //默认宽320px
+ *          height : '504',     //默认高504px
+ *          origin : 'center center 0'     //缩放中心点，可选，在contain和cover模式下无效，默认为"left top 0"
+ *      })
+ *   }
  */
+modules.exports = pageResponse;
